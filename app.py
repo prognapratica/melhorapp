@@ -2,7 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
 @app.get('/')
 def index():
     return 'app renderizado'
@@ -10,6 +9,10 @@ def index():
 @app.get('/inscrito/<nome_inscrito>')
 def inscrito(nome_inscrito):
     return f"olá {nome_inscrito}"
+
+@app.get('/novarota')
+def novarota():
+    return 'nova rota'
 
 @app.get('/melhorcanaldoyoutube')
 def meucanal():
