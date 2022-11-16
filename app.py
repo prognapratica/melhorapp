@@ -11,5 +11,9 @@ def index():
 def inscrito(nome_inscrito):
     return f"olá {nome_inscrito}"
 
+@app.get('/melhorcanaldoyoutube')
+def meucanal():
+    return 'é o programação na prática'
+
 if __name__ == '__main__':
     app.run()
